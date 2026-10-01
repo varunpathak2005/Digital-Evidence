@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Evidence Contamination Scenario — A comprehensive case study analyzing evidence integrity failures, identifying mistakes, and suggesting preventive measures in digital forensics.">
+    <title>Digital Evidence Contamination Scenario — Forensic Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background Particles -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <div class="nav-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+            </div>
+            <span>Digital Forensics</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#overview" class="nav-link">Overview</a>
+            <a href="#scenario" class="nav-link">Case Study</a>
+            <a href="#timeline" class="nav-link">Timeline</a>
+            <a href="#mistakes" class="nav-link">Mistakes</a>
+            <a href="#impact" class="nav-link">Impact</a>
+            <a href="#preventive" class="nav-link">Prevention</a>
+            <a href="#framework" class="nav-link">Framework</a>
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v4l2 2"/>
+                </svg>
+                Cyber Forensics Case Study
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="hero-title-line">Digital Evidence</span>
+                <span class="hero-title-line gradient-text">Contamination Scenario</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                A comprehensive analysis of how evidence integrity failures compromise digital investigations — examining real-world mistakes, chain of custody breakdowns, and preventive frameworks for forensic practitioners.
+            </p>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Critical Mistakes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Preventive Measures</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-label">Evidence Types</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-label">Key Phases</div>
+                </div>
+            </div>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#scenario" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    Study the Case
+                </a>
+                <a href="#preventive" class="btn btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    View Prevention Framework
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">01 — Overview</div>
+                <h2 class="section-title">What is Digital Evidence <span class="gradient-text">Contamination?</span></h2>
+                <p class="section-subtitle">Understanding how the integrity of digital evidence can be compromised during collection, handling, analysis, or storage — rendering it inadmissible or unreliable in legal proceedings.</p>
+            </div>
+
+            <div class="overview-grid">
+                <div class="overview-card animate-on-scroll">
+                    <div class="overview-card-icon" style="--accent: #f43f5e;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Definition</h3>
+                    <p>Digital evidence contamination occurs when electronic data is altered, corrupted, or mishandled in a way that compromises its authenticity, integrity, or reliability. This can happen at any stage — from seizure to courtroom presentation.</p>
+                </div>
+
+                <div class="overview-card animate-on-scroll">
+                    <div class="overview-card-icon" style="--accent: #8b5cf6;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Chain of Custody</h3>
+                    <p>The chain of custody is a chronological, documented record tracking evidence from collection to courtroom. Any gap in this chain creates legal vulnerability and raises questions about evidence authenticity.</p>
+                </div>
+
+                <div class="overview-card animate-on-scroll">
+                    <div class="overview-card-icon" style="--accent: #06b6d4;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>Integrity Verification</h3>
+                    <p>Cryptographic hashing (MD5, SHA-256) creates unique digital fingerprints of evidence. Comparing hash values before and after analysis provides mathematical proof that data remains unaltered throughout the investigation.</p>
+                </div>
+
+                <div class="overview-card animate-on-scroll">
+                    <div class="overview-card-icon" style="--accent: #f59e0b;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 20V10"/>
+                            <path d="M12 20V4"/>
+                            <path d="M6 20v-6"/>
+                        </svg>
+                    </div>
+                    <h3>Legal Impact</h3>
+                    <p>Contaminated evidence can be declared inadmissible, leading to case dismissal, wrongful convictions, or acquittals. Courts rely on forensic examiners to demonstrate unbroken integrity from seizure to testimony.</p>
+                </div>
+            </div>
+
+            <!-- Types of Digital Evidence -->
+            <div class="evidence-types animate-on-scroll">
+                <h3 class="subsection-title">Types of Digital Evidence Vulnerable to Contamination</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-item">
+                        <div class="evidence-icon">💾</div>
+                        <span>Storage Media</span>
+                        <small>Hard drives, SSDs, USB drives</small>
+                    </div>
+                    <div class="evidence-item">
+                        <div class="evidence-icon">📱</div>
+                        <span>Mobile Devices</span>
+                        <small>Smartphones, tablets</small>
+                    </div>
+                    <div class="evidence-item">
+                        <div class="evidence-icon">🌐</div>
+                        <span>Network Logs</span>
+                        <small>Server logs, traffic captures</small>
+                    </div>
+                    <div class="evidence-item">
+                        <div class="evidence-icon">📧</div>
+                        <span>Communications</span>
+                        <small>Emails, chat messages</small>
+                    </div>
+                    <div class="evidence-item">
+                        <div class="evidence-icon">☁️</div>
+                        <span>Cloud Data</span>
+                        <small>Cloud storage, SaaS records</small>
+                    </div>
+                    <div class="evidence-item">
+                        <div class="evidence-icon">🔑</div>
+                        <span>Volatile Memory</span>
+                        <small>RAM dumps, running processes</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Scenario Section -->
+    <section class="section section-dark" id="scenario">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">02 — Case Study</div>
+                <h2 class="section-title">The <span class="gradient-text">"TechCorp Data Breach"</span> Investigation</h2>
+                <p class="section-subtitle">A fictional but realistic scenario based on patterns observed in actual forensic investigation failures, illustrating how multiple contamination errors compound to destroy a case.</p>
+            </div>
+
+            <!-- Case Brief -->
+            <div class="case-brief animate-on-scroll">
+                <div class="case-brief-header">
+                    <div class="case-file-badge">CASE FILE #DF-2025-0472</div>
+                    <div class="case-status status-compromised">⚠ EVIDENCE COMPROMISED</div>
+                </div>
+                <div class="case-brief-body">
+                    <div class="case-detail-grid">
+                        <div class="case-detail">
+                            <label>Case Title</label>
+                            <span>State v. Marcus Webb — Corporate Data Theft</span>
+                        </div>
+                        <div class="case-detail">
+                            <label>Suspect</label>
+                            <span>Marcus Webb, Former Senior Systems Administrator</span>
+                        </div>
+                        <div class="case-detail">
+                            <label>Victim Organization</label>
+                            <span>TechCorp Industries — Fortune 500 Technology Company</span>
+                        </div>
+                        <div class="case-detail">
+                            <label>Allegation</label>
+                            <span>Unauthorized exfiltration of proprietary source code and customer database (250,000+ records)</span>
+                        </div>
+                        <div class="case-detail">
+                            <label>Digital Evidence</label>
+                            <span>2× Workstation HDDs, 1× Laptop SSD, 3× USB Drives, Email Server Logs, VPN Access Logs, Cloud Storage Archives</span>
+                        </div>
+                        <div class="case-detail">
+                            <label>Outcome</label>
+                            <span class="text-danger">Case dismissed — Evidence ruled inadmissible due to contamination</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenario Narrative -->
+            <div class="narrative-grid">
+                <div class="narrative-card animate-on-scroll">
+                    <div class="narrative-number">01</div>
+                    <h3>The Incident</h3>
+                    <p>TechCorp's security team detected unusual data transfers from the internal network to an external cloud storage service. Over three weeks, approximately <strong>47 GB of proprietary source code</strong> and a customer database containing <strong>250,000+ records</strong> were exfiltrated. VPN logs pointed to Marcus Webb, a senior systems administrator who had recently been passed over for promotion and had submitted his resignation.</p>
+                </div>
+
+                <div class="narrative-card animate-on-scroll">
+                    <div class="narrative-number">02</div>
+                    <h3>The Response</h3>
+                    <p>TechCorp's IT department immediately attempted to investigate before notifying law enforcement. The IT manager <strong>logged into Webb's workstation using admin credentials</strong>, browsed through files, and opened several documents to assess the scope of the breach. This occurred <strong>12 hours before police arrived</strong> with a search warrant, irreversibly altering file access timestamps and system metadata.</p>
+                </div>
+
+                <div class="narrative-card animate-on-scroll">
+                    <div class="narrative-number">03</div>
+                    <h3>The Collection</h3>
+                    <p>When the police digital forensics unit arrived, they seized Webb's workstation, laptop, and three USB drives. However, the lead investigator, <strong>Officer James Chen — not certified in digital forensics</strong> — connected the USB drives directly to a department laptop <strong>without using a write-blocker</strong>, inadvertently modifying the "last accessed" timestamps on all files across all three drives.</p>
+                </div>
+
+                <div class="narrative-card animate-on-scroll">
+                    <div class="narrative-number">04</div>
+                    <h3>The Analysis</h3>
+                    <p>The forensic examiner created disk images but <strong>failed to calculate and record hash values</strong> of the original media before imaging. During analysis, the examiner used an <strong>unvalidated version of a forensic tool</strong> that was later found to have a known bug affecting timestamp parsing in NTFS file systems. Additionally, working copies and original images were stored in the same directory with <strong>ambiguous naming conventions</strong>.</p>
+                </div>
+
+                <div class="narrative-card animate-on-scroll">
+                    <div class="narrative-number">05</div>
+                    <h3>The Trial</h3>
+                    <p>At trial, the defense mounted a devastating challenge. They demonstrated that <strong>file timestamps had been altered</strong> during the IT department's unauthorized access, USB evidence was contaminated by the officer's improper handling, <strong>no hash verification</strong> could prove data integrity, and the forensic tool used had a known defect. The judge ruled the digital evidence <strong>inadmissible</strong>, and the case was dismissed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigation Timeline -->
+    <section class="section" id="timeline">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">03 — Timeline</div>
+                <h2 class="section-title">Investigation <span class="gradient-text">Timeline of Errors</span></h2>
+                <p class="section-subtitle">A chronological mapping of every contamination event during the TechCorp investigation, showing how errors accumulated at each phase.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="detection">
+                    <div class="timeline-marker marker-warning"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 1 — March 3, 2025</div>
+                        <h3>Breach Detected</h3>
+                        <p>TechCorp SIEM alerts flag anomalous data exfiltration to external cloud storage. Security team begins internal review.</p>
+                        <div class="timeline-tag tag-neutral">Detection Phase</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="error1">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 1 — March 3, 2025 (Evening)</div>
+                        <h3>❌ Mistake #1: Unauthorized System Access</h3>
+                        <p>IT Manager logs into suspect's workstation using admin credentials, browses files and opens documents. File access timestamps, MRU lists, and registry entries are modified irreversibly.</p>
+                        <div class="timeline-tag tag-danger">CONTAMINATION EVENT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="error2">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 2 — March 4, 2025</div>
+                        <h3>❌ Mistake #2: Improper Evidence Handling</h3>
+                        <p>Officer Chen connects seized USB drives to department laptop without write-blocker. "Last accessed" timestamps modified on all files across 3 drives. No forensic certification held by handling officer.</p>
+                        <div class="timeline-tag tag-danger">CONTAMINATION EVENT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="imaging">
+                    <div class="timeline-marker marker-warning"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 3 — March 5, 2025</div>
+                        <h3>Evidence Imaging Begins</h3>
+                        <p>Forensic examiner begins creating disk images of seized hard drives and SSDs. Evidence is transported to forensics lab.</p>
+                        <div class="timeline-tag tag-neutral">Processing Phase</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="error3">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 3 — March 5, 2025</div>
+                        <h3>❌ Mistake #3: No Hash Verification</h3>
+                        <p>Forensic examiner creates bit-for-bit disk images but fails to calculate SHA-256 hash values of original media before imaging. No mathematical proof of integrity exists.</p>
+                        <div class="timeline-tag tag-danger">CONTAMINATION EVENT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="error4">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 5–20 — March 7–22, 2025</div>
+                        <h3>❌ Mistake #4: Unvalidated Forensic Tool</h3>
+                        <p>Analysis conducted using forensic software with a known, unpatched bug in NTFS timestamp parsing. Tool version not validated against NIST standards. Results are unreliable.</p>
+                        <div class="timeline-tag tag-danger">CONTAMINATION EVENT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="error5">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 5–20 — March 7–22, 2025</div>
+                        <h3>❌ Mistake #5: Poor File Management</h3>
+                        <p>Original forensic images and working copies stored in the same directory with ambiguous naming (e.g., "copy1", "backup_final"). Risk of accidental overwriting and version confusion.</p>
+                        <div class="timeline-tag tag-danger">CONTAMINATION EVENT</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-phase="trial">
+                    <div class="timeline-marker marker-danger"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Day 90 — June 2, 2025</div>
+                        <h3>Case Dismissed</h3>
+                        <p>Defense successfully challenges all digital evidence. Judge rules evidence inadmissible. Case dismissed. The suspect walks free despite strong circumstantial evidence of data theft.</p>
+                        <div class="timeline-tag tag-danger">CASE FAILURE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mistakes Identified Section -->
+    <section class="section section-dark" id="mistakes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">04 — Analysis</div>
+                <h2 class="section-title">Critical <span class="gradient-text">Mistakes Identified</span></h2>
+                <p class="section-subtitle">A detailed breakdown of each error that led to evidence contamination, categorized by severity and phase of investigation.</p>
+            </div>
+
+            <div class="mistakes-grid">
+                <!-- Mistake 1 -->
+                <div class="mistake-card animate-on-scroll">
+                    <div class="mistake-header">
+                        <div class="mistake-severity severity-critical">CRITICAL</div>
+                        <div class="mistake-number">#1</div>
+                    </div>
+                    <h3>Unauthorized Pre-Investigation Access</h3>
+                    <div class="mistake-details">
+                        <div class="mistake-what">
+                            <h4>What Happened</h4>
+                            <p>The IT Manager accessed the suspect's workstation before law enforcement arrived, logging in with admin credentials and browsing through files and documents.</p>
+                        </div>
+                        <div class="mistake-why">
+                            <h4>Why It's a Problem</h4>
+                            <ul>
+                                <li>Modified file access timestamps (MAC times) across the entire file system</li>
+                                <li>Altered "Most Recently Used" (MRU) registry entries</li>
+                                <li>Changed Windows Event Log entries and Prefetch data</li>
+                                <li>Created new artifacts (login events, file access records) that contaminated the forensic timeline</li>
+                                <li>Made it impossible to distinguish between suspect's actions and IT Manager's actions</li>
+                            </ul>
+                        </div>
+                        <div class="mistake-impact">
+                            <h4>Forensic Impact</h4>
+                            <div class="impact-meter">
+                                <div class="impact-bar" style="--impact: 95%;"></div>
+                                <span>95% — Catastrophic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mistake 2 -->
+                <div class="mistake-card animate-on-scroll">
+                    <div class="mistake-header">
+                        <div class="mistake-severity severity-critical">CRITICAL</div>
+                        <div class="mistake-number">#2</div>
+                    </div>
+                    <h3>Evidence Handling Without Write-Blocker</h3>
+                    <div class="mistake-details">
+                        <div class="mistake-what">
+                            <h4>What Happened</h4>
+                            <p>Officer Chen connected the seized USB drives directly to a department laptop without using a hardware or software write-blocker device.</p>
+                        </div>
+                        <div class="mistake-why">
+                            <h4>Why It's a Problem</h4>
+                            <ul>
+                                <li>Operating systems automatically modify metadata when storage devices are connected</li>
+                                <li>"Last accessed" timestamps were updated across all files on all three USB drives</li>
+                                <li>Hidden system files and thumbnail caches may have been created or modified</li>
+                                <li>The officer lacked digital forensics certification, violating handling protocols</li>
+                                <li>Original state of evidence can never be recovered</li>
+                            </ul>
+                        </div>
+                        <div class="mistake-impact">
+                            <h4>Forensic Impact</h4>
+                            <div class="impact-meter">
+                                <div class="impact-bar" style="--impact: 90%;"></div>
+                                <span>90% — Catastrophic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mistake 3 -->
+                <div class="mistake-card animate-on-scroll">
+                    <div class="mistake-header">
+                        <div class="mistake-severity severity-high">HIGH</div>
+                        <div class="mistake-number">#3</div>
+                    </div>
+                    <h3>Failure to Compute Hash Values</h3>
+                    <div class="mistake-details">
+                        <div class="mistake-what">
+                            <h4>What Happened</h4>
+                            <p>The forensic examiner created disk images without first calculating and recording cryptographic hash values (SHA-256 or MD5) of the original storage media.</p>
+                        </div>
+                        <div class="mistake-why">
+                            <h4>Why It's a Problem</h4>
+                            <ul>
+                                <li>No mathematical proof that forensic images are exact copies of original media</li>
+                                <li>Cannot verify that evidence was not altered during transit or storage</li>
+                                <li>Defense can argue that data was modified after seizure</li>
+                                <li>Violates fundamental forensic principle: "hash before you image"</li>
+                                <li>Renders all subsequent analysis results suspect</li>
+                            </ul>
+                        </div>
+                        <div class="mistake-impact">
+                            <h4>Forensic Impact</h4>
+                            <div class="impact-meter">
+                                <div class="impact-bar" style="--impact: 85%;"></div>
+                                <span>85% — Severe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mistake 4 -->
+                <div class="mistake-card animate-on-scroll">
+                    <div class="mistake-header">
+                        <div class="mistake-severity severity-high">HIGH</div>
+                        <div class="mistake-number">#4</div>
+                    </div>
+                    <h3>Unvalidated Forensic Software</h3>
+                    <div class="mistake-details">
+                        <div class="mistake-what">
+                            <h4>What Happened</h4>
+                            <p>Analysis was performed using a forensic tool with a known, unpatched bug affecting NTFS timestamp parsing. The tool version had not been validated against NIST standards.</p>
+                        </div>
+                        <div class="mistake-why">
+                            <h4>Why It's a Problem</h4>
+                            <ul>
+                                <li>Incorrect timestamp interpretation led to flawed conclusions about file access patterns</li>
+                                <li>Tool defect introduced systematic errors into all timeline analysis</li>
+                                <li>No tool validation documentation available to present in court</li>
+                                <li>Similar to the Casey Anthony case where software bugs led to incorrect forensic conclusions</li>
+                                <li>Undermines the credibility of the entire forensic examination</li>
+                            </ul>
+                        </div>
+                        <div class="mistake-impact">
+                            <h4>Forensic Impact</h4>
+                            <div class="impact-meter">
+                                <div class="impact-bar" style="--impact: 75%;"></div>
+                                <span>75% — Significant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mistake 5 -->
+                <div class="mistake-card animate-on-scroll">
+                    <div class="mistake-header">
+                        <div class="mistake-severity severity-medium">MEDIUM</div>
+                        <div class="mistake-number">#5</div>
+                    </div>
+                    <h3>Poor Evidence File Management</h3>
+                    <div class="mistake-details">
+                        <div class="mistake-what">
+                            <h4>What Happened</h4>
+                            <p>Original forensic images and working copies were stored in the same directory with ambiguous file names like "copy1," "backup_final," and "analysis_v2."</p>
+                        </div>
+                        <div class="mistake-why">
+                            <h4>Why It's a Problem</h4>
+                            <ul>
+                                <li>Risk of accidentally analyzing or modifying the original forensic image</li>
+                                <li>No clear distinction between pristine copies and working copies</li>
+                                <li>Version confusion makes it impossible to trace which image was analyzed</li>
+                                <li>Violates best practices for evidence segregation and labeling</li>
+                                <li>Defense can argue any copy could have been the one modified</li>
+                            </ul>
+                        </div>
+                        <div class="mistake-impact">
+                            <h4>Forensic Impact</h4>
+                            <div class="impact-meter">
+                                <div class="impact-bar" style="--impact: 60%;"></div>
+                                <span>60% — Moderate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Analysis Section -->
+    <section class="section" id="impact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">05 — Impact</div>
+                <h2 class="section-title">Consequences of <span class="gradient-text">Evidence Contamination</span></h2>
+                <p class="section-subtitle">The cascading effects of evidence integrity failures extend far beyond a single case — impacting justice, public trust, and institutional credibility.</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #f43f5e, #e11d48);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Case Dismissal</h3>
+                    <p>The primary consequence: contaminated evidence is ruled inadmissible, causing the entire case to collapse regardless of the strength of other evidence. In the TechCorp scenario, a guilty suspect walked free.</p>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Victim Impact</h3>
+                    <p>250,000+ customers whose data was stolen received no justice. TechCorp suffered continued competitive disadvantage from stolen source code. Victims lose faith in the legal system's ability to protect them.</p>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3>Institutional Credibility</h3>
+                    <p>The forensics lab and investigating agency face scrutiny, potential audits, and loss of public trust. Defense attorneys in future cases may cite this failure to challenge evidence from the same lab.</p>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Financial Costs</h3>
+                    <p>Wasted investigation costs, potential civil liability for mishandled evidence, TechCorp's unrecovered losses from the data breach, and regulatory fines for failing to protect customer data compound the damage.</p>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="9" y1="15" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Legal Precedent</h3>
+                    <p>Failed cases create precedents that defense attorneys exploit in future litigation. The standards for digital evidence handling may tighten, increasing compliance costs for all agencies.</p>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Emboldened Criminals</h3>
+                    <p>When cases fail due to procedural errors rather than innocence, it signals to cybercriminals that technical sophistication isn't needed to avoid prosecution — investigator incompetence may suffice.</p>
+                </div>
+            </div>
+
+            <!-- Impact Comparison Table -->
+            <div class="comparison-table animate-on-scroll">
+                <h3 class="subsection-title">Contaminated vs. Properly Handled Evidence — Outcome Comparison</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th class="col-bad">Contaminated (This Case)</th>
+                                <th class="col-good">Properly Handled</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Evidence Admissibility</td>
+                                <td class="col-bad">❌ Ruled inadmissible</td>
+                                <td class="col-good">✅ Fully admissible</td>
+                            </tr>
+                            <tr>
+                                <td>Chain of Custody</td>
+                                <td class="col-bad">❌ Multiple gaps documented</td>
+                                <td class="col-good">✅ Unbroken, fully documented</td>
+                            </tr>
+                            <tr>
+                                <td>Hash Verification</td>
+                                <td class="col-bad">❌ Not performed</td>
+                                <td class="col-good">✅ SHA-256 verified at all stages</td>
+                            </tr>
+                            <tr>
+                                <td>Timeline Accuracy</td>
+                                <td class="col-bad">❌ Timestamps contaminated</td>
+                                <td class="col-good">✅ Preserved with write-blockers</td>
+                            </tr>
+                            <tr>
+                                <td>Tool Validation</td>
+                                <td class="col-bad">❌ Unvalidated, buggy software</td>
+                                <td class="col-good">✅ NIST-validated tools</td>
+                            </tr>
+                            <tr>
+                                <td>Case Outcome</td>
+                                <td class="col-bad">❌ Case dismissed</td>
+                                <td class="col-good">✅ Successful prosecution</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preventive Measures Section -->
+    <section class="section section-dark" id="preventive">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">06 — Prevention</div>
+                <h2 class="section-title">Preventive <span class="gradient-text">Measures & Best Practices</span></h2>
+                <p class="section-subtitle">Eight essential preventive measures that would have preserved evidence integrity in the TechCorp case — and should be standard practice in every digital forensic investigation.</p>
+            </div>
+
+            <div class="preventive-grid">
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">01</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Immediate Scene Preservation</h3>
+                    <p>Never allow untrained personnel to access digital devices after an incident is detected. Power down devices only when appropriate (not for servers with volatile data). Isolate the scene and wait for trained forensic professionals.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistake #1</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">02</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Mandatory Write-Blocker Usage</h3>
+                    <p>Always use hardware write-blockers (e.g., Tableau, CRU) when connecting any evidence media to analysis systems. Software write-blockers should serve as backup. Never connect evidence directly to any computer.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistake #2</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">03</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>Hash Everything, Always</h3>
+                    <p>Calculate and document SHA-256 (and optionally MD5) hash values at every stage: before imaging, after imaging, before analysis, and after analysis. Hash verification must be the first and last step of every forensic operation.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistake #3</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">04</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <path d="M9 15l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Validate Forensic Tools</h3>
+                    <p>Only use forensic tools that have been validated against NIST (CFTT) standards. Maintain current software versions with all patches applied. Document tool version, configuration, and validation status in every case report.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistake #4</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">05</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Strict Evidence Segregation</h3>
+                    <p>Maintain clear separation between original images, working copies, and analysis outputs. Use standardized naming conventions (e.g., CASE-ID_EVIDENCE-ID_TYPE_DATE). Store originals on write-once media or in access-controlled storage.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistake #5</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">06</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Trained & Certified Personnel Only</h3>
+                    <p>Ensure all evidence handlers hold recognized certifications (EnCE, CFCE, GCFE, CCE). Provide annual training on evolving standards. Only certified forensic examiners should handle, image, or analyze digital evidence.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes Mistakes #1, #2</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">07</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Comprehensive Documentation</h3>
+                    <p>Document every action: who handled evidence, when, why, and how. Use automated logging systems (DEMS) where possible. Photograph evidence before and after each handling. Maintain a chain of custody form with signatures at every transfer point.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Fixes All Mistakes</span>
+                    </div>
+                </div>
+
+                <div class="preventive-card animate-on-scroll">
+                    <div class="preventive-icon">
+                        <span class="preventive-num">08</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v4l2 2"/>
+                        </svg>
+                    </div>
+                    <h3>Incident Response Protocol</h3>
+                    <p>Establish and rehearse a formal Incident Response Plan (IRP) that includes clear roles, communication procedures, and evidence preservation steps. Conduct tabletop exercises annually. Coordinate with law enforcement <em>before</em> touching any devices.</p>
+                    <div class="preventive-fixes">
+                        <span class="fix-tag">Prevents All Mistakes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section class="section" id="framework">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">07 — Framework</div>
+                <h2 class="section-title">Evidence Handling <span class="gradient-text">Standard Framework</span></h2>
+                <p class="section-subtitle">A structured four-phase framework aligned with ISO 27037 and NIST SP 800-86 guidelines for ensuring digital evidence integrity throughout the investigation lifecycle.</p>
+            </div>
+
+            <!-- Framework Phases -->
+            <div class="framework-phases">
+                <div class="phase-card animate-on-scroll">
+                    <div class="phase-header" style="--phase-color: #8b5cf6;">
+                        <div class="phase-number">Phase 1</div>
+                        <h3>Identification & Preservation</h3>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-checklist">
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Identify all potential evidence sources (devices, cloud, network)</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Secure the scene — restrict physical and logical access</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Photograph devices in situ before any handling</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Capture volatile data (RAM, running processes) if system is live</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Document all personnel present and their roles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card animate-on-scroll">
+                    <div class="phase-header" style="--phase-color: #06b6d4;">
+                        <div class="phase-number">Phase 2</div>
+                        <h3>Collection & Acquisition</h3>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-checklist">
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Use hardware write-blockers for all media connections</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Calculate SHA-256 hash of original media BEFORE imaging</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Create bit-for-bit forensic images (minimum 2 copies)</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Verify image hash matches original media hash</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Initiate chain of custody documentation with evidence tags</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card animate-on-scroll">
+                    <div class="phase-header" style="--phase-color: #f59e0b;">
+                        <div class="phase-number">Phase 3</div>
+                        <h3>Examination & Analysis</h3>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-checklist">
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Work ONLY on verified working copies — never on originals</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Use NIST-validated, up-to-date forensic tools only</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Document tool name, version, and configuration for each analysis step</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Cross-validate findings with at least two independent tools</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Re-verify working copy hash after analysis to confirm no changes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-card animate-on-scroll">
+                    <div class="phase-header" style="--phase-color: #10b981;">
+                        <div class="phase-number">Phase 4</div>
+                        <h3>Reporting & Presentation</h3>
+                    </div>
+                    <div class="phase-body">
+                        <div class="phase-checklist">
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Compile comprehensive report with methodology documentation</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Include all hash values, timestamps, and chain of custody records</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Peer review by a second certified forensic examiner</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Store originals in secure, access-controlled, climate-controlled evidence storage</span>
+                            </div>
+                            <div class="check-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Prepare examiner for testimony — anticipate defense challenges</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chain of Custody Diagram -->
+            <div class="custody-flow animate-on-scroll">
+                <h3 class="subsection-title">Proper Chain of Custody Flow</h3>
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #8b5cf6;">🔍</div>
+                        <span>Scene Secured</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #06b6d4;">📸</div>
+                        <span>Documented</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #f59e0b;">#️⃣</div>
+                        <span>Hashed</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #10b981;">💿</div>
+                        <span>Imaged</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #f43f5e;">✅</div>
+                        <span>Verified</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #8b5cf6;">🔬</div>
+                        <span>Analyzed</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #06b6d4;">📋</div>
+                        <span>Reported</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon" style="--flow-color: #10b981;">🔒</div>
+                        <span>Stored</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real World Reference Cases -->
+            <div class="reference-cases animate-on-scroll">
+                <h3 class="subsection-title">Real-World Reference Cases</h3>
+                <div class="reference-grid">
+                    <div class="reference-card">
+                        <div class="reference-type type-failure">Case Failure</div>
+                        <h4>Casey Anthony Case (2011)</h4>
+                        <p>Prosecution relied on forensic software that incorrectly parsed browser history data, showing 84 searches for "chloroform" when there was only 1. The <strong>unvalidated tool defect</strong> severely undermined the digital evidence's credibility.</p>
+                        <div class="reference-lesson">
+                            <strong>Lesson:</strong> Always validate forensic tools and cross-verify findings with independent software.
+                        </div>
+                    </div>
+                    <div class="reference-card">
+                        <div class="reference-type type-failure">Case Failure</div>
+                        <h4>Julie Amero Case (2007)</h4>
+                        <p>A substitute teacher was convicted based on disputed evidence of pornographic pop-ups on a classroom computer. The forensic analysis <strong>failed to account for malware-driven pop-ups</strong> and lacked proper methodology documentation.</p>
+                        <div class="reference-lesson">
+                            <strong>Lesson:</strong> Thorough analysis must consider alternative explanations; documentation must be comprehensive.
+                        </div>
+                    </div>
+                    <div class="reference-card">
+                        <div class="reference-type type-success">Best Practice</div>
+                        <h4>BTK Killer Case (2005)</h4>
+                        <p>Investigators successfully used <strong>metadata from a floppy disk</strong> to identify Dennis Rader. The evidence was properly preserved, hashed, and analyzed using validated methods, making it fully admissible and pivotal to the conviction.</p>
+                        <div class="reference-lesson">
+                            <strong>Lesson:</strong> Proper forensic methodology transforms digital artifacts into irrefutable evidence.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="section section-dark" id="conclusion">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">08 — Conclusion</div>
+                <h2 class="section-title">Key <span class="gradient-text">Takeaways & Lessons Learned</span></h2>
+                <p class="section-subtitle">The TechCorp case demonstrates that digital forensic investigations are only as strong as their weakest procedural link.</p>
+            </div>
+
+            <div class="conclusion-content">
+                <div class="takeaway-cards">
+                    <div class="takeaway-card animate-on-scroll">
+                        <div class="takeaway-number">01</div>
+                        <h3>Preservation Before Investigation</h3>
+                        <p>The single most damaging error was the IT Manager's unauthorized access to the suspect's workstation. Organizations must have clear incident response protocols that prioritize evidence preservation over curiosity. <strong>No investigation should begin before evidence is secured.</strong></p>
+                    </div>
+
+                    <div class="takeaway-card animate-on-scroll">
+                        <div class="takeaway-number">02</div>
+                        <h3>Technology Without Process is Dangerous</h3>
+                        <p>Having forensic tools is meaningless without proper procedures. Write-blockers are useless if they aren't used. Hash algorithms are irrelevant if hashes aren't computed. <strong>Process discipline is the foundation of forensic integrity.</strong></p>
+                    </div>
+
+                    <div class="takeaway-card animate-on-scroll">
+                        <div class="takeaway-number">03</div>
+                        <h3>Training is Non-Negotiable</h3>
+                        <p>Officer Chen's lack of digital forensics certification directly led to USB evidence contamination. Every person who touches digital evidence must be trained and certified. <strong>Untrained handling is indistinguishable from intentional tampering</strong> in the eyes of the court.</p>
+                    </div>
+
+                    <div class="takeaway-card animate-on-scroll">
+                        <div class="takeaway-number">04</div>
+                        <h3>Documentation is Your Shield</h3>
+                        <p>Comprehensive, contemporaneous documentation of every action is the investigator's most powerful defense against challenges. If it isn't documented, <strong>it didn't happen</strong> — or worse, the defense will argue something else did.</p>
+                    </div>
+
+                    <div class="takeaway-card animate-on-scroll">
+                        <div class="takeaway-number">05</div>
+                        <h3>Contamination is Cumulative</h3>
+                        <p>No single error necessarily destroys a case — but errors compound. The TechCorp case failed because five independent mistakes created a pattern of negligence that <strong>no amount of expert testimony could overcome</strong>. Each error reinforced the defense's narrative of unreliable evidence.</p>
+                    </div>
+                </div>
+
+                <!-- Final Summary Box -->
+                <div class="final-summary animate-on-scroll">
+                    <div class="summary-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>The Bottom Line</h3>
+                    <p>Digital evidence is <strong>fragile, volatile, and legally demanding</strong>. Unlike physical evidence, it can be altered without any visible trace. The difference between a successful prosecution and a dismissed case often comes down to whether investigators followed established protocols at every step. The TechCorp scenario is a cautionary tale: <strong>a strong case built on contaminated evidence is no case at all.</strong></p>
+                    <p>By implementing the preventive measures and framework outlined in this study, forensic practitioners can ensure that digital evidence maintains its integrity from seizure to courtroom — serving justice rather than undermining it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span>Digital Evidence Contamination Scenario</span>
+                </div>
+                <div class="footer-info">
+                    <p>Cyber Forensics Case Study Project</p>
+                    <p>Digital Forensics & Cyber Security</p>
+                </div>
+                <div class="footer-references">
+                    <h4>Standards Referenced</h4>
+                    <ul>
+                        <li>ISO/IEC 27037:2012 — Digital Evidence Identification & Preservation</li>
+                        <li>NIST SP 800-86 — Guide to Integrating Forensic Techniques</li>
+                        <li>NIST CFTT — Computer Forensic Tool Testing Program</li>
+                        <li>ACPO Good Practice Guide for Digital Evidence</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Forensics Case Study. Academic Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
